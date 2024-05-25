@@ -1,0 +1,113 @@
+html,
+body,
+ul,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #EFEFEF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+}
+
+header {
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px #EAEAEA;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px 10px;
+}
+
+header h1 {
+    background: url(icons/comentario.svg) no-repeat 0 center;
+    background-size: 1em 1em;
+    color: #555;
+    font-size: 1.5em;
+    padding-left: 1.1em;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+}
+
+header ul a,
+#menu ul a {
+    display: inline-block;
+    padding: 0 5px;
+    text-indent: -100000px;
+    width: 1em;
+}
+
+#menu ul a {
+    padding: 10px 0;
+}
+
+#support {
+    background: url("icons/auriculares.svg") no-repeat 0 center;
+    background-size: 1em 1em;
+}
+
+#user {
+    background: url("icons/usuario.svg") no-repeat 0 center;
+    background-size: 1em 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+}
+
+#dashboard {
+    background: url("icons/grafico-histograma.svg") no-repeat 0 center;
+    background-size: 1em 1em;
+}
+
+#earned {
+    background: url("icons/dolar.svg") no-repeat 0 center;
+    background-size: 1em 1em;
+}
+
+#kpis {
+    background: url("icons/ajustes-deslizadores.svg") no-repeat 0 center;
+    background-size: 1em 1em;
+}
+
+#settings {
+    background: url("icons/ajustes.svg") no-repeat 0 center;
+    background-size: 1em 1em;
+}
+
+#kpi ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+
+#kpi li {
+    display: grid;
+    grid-template-rows: auto auto;
+    text-align: right;
+}
+
+#kpi em {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#kpi i {
+    font-size: 0.8em;
+}
+
+#graph {
+    margin-top: 20px;
+}
