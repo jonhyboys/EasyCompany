@@ -33,38 +33,73 @@ header h1 {
     padding-left: 1.1em;
 }
 
-header ul {
-    display: grid;
-    grid-template-columns: auto auto;
+header nav {
+    align-items: center;
+    display: flex;
     justify-content: end;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul a {
+    text-indent: -100vw;
 }
 
 header ul a,
 #menu ul a {
     display: inline-block;
     padding: 0 5px;
-    text-indent: -100000px;
     width: 1em;
 }
 
 #menu ul a {
-    padding: 10px 0;
+    color: #333;
+    padding: 10px 0 10px 25px;
+    text-decoration: none;
 }
 
 #support {
-    background: url("icons/auriculares.svg") no-repeat 0 center;
+    background: url("icons/auriculares.svg") no-repeat center center;
     background-size: 1em 1em;
 }
 
 #user {
-    background: url("icons/usuario.svg") no-repeat 0 center;
+    background: url("icons/usuario.svg") no-repeat center center;
+    background-size: 1em 1em;
+}
+
+#mobil-menu {    
+    background: url("icons/menu-hamburguesa.svg") no-repeat center center;
     background-size: 1em 1em;
 }
 
 main {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     margin-top: 20px;
+}
+
+#menu.hide {
+    display: none;
+}
+
+main nav {
+    background-color: #F1F1F1;
+    bottom: 0;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#close {
+    text-align: right;
+}
+
+#close a {
+    margin-right: 50px;
 }
 
 #dashboard {
@@ -87,6 +122,11 @@ main {
     background-size: 1em 1em;
 }
 
+article {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
 #kpi ul {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -99,15 +139,41 @@ main {
     text-align: right;
 }
 
-#kpi em {
-    font-size: 2em;
-    font-weight: bold;
+#kpi strong {
+    font-size: 1em;
 }
 
-#kpi i {
-    font-size: 0.8em;
+#kpi em {
+    font-size: 0.5em;
 }
 
 #graph {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
+}
+
+#table {
+    margin-top: 20px;
+}
+
+#table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+#table th,
+#table td {
+    border: 1px solid #333;
+    font-size: 0.7em;
+    padding: 5px 2px;
+}
+
+#table td:nth-child(5) {
+    text-align: center;
+}
+
+#table td:nth-child(6) {
+    text-align: right;
 }

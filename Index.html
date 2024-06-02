@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EasyCompany</title>
     <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
     <header>
         <h1>Easy Reports</h1>
         <nav>
             <ul>
                 <li id="support">
-                    <a href="#">Support</a></li>
+                    <a href="#">Support</a>
+                </li>
                 <li id="user">
                     <a href="#">User</a>
+                </li>
+                <li id="mobil-menu">
+                    <a href="#">Men&uacute;</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <nav id="menu">
+        <nav id="menu" class="hide">
             <ul>
+                <li id="close">
+                    <a href="#">Close</a>
+                </li>
                 <li id="dashboard">
                     <a href="#">Dashboard</a>
                 </li>
@@ -40,24 +49,240 @@
             <section id="kpi">
                 <ul>
                     <li>
-                        <em>10.589</em>
-                        <i>Units</i>
+                        <strong>10.589</strong>
+                        <em>Units</em>
                     </li>
                     <li>
-                        <em>20%</em>
-                        <i>Increment</i>
+                        <strong>20%</strong>
+                        <em>Increment</em>
                     </li>
                     <li>
-                        <em>56.658,87</em>
-                        <i>Accumulate</i>
+                        <strong>56.658,87</strong>
+                        <em>Accumulate</em>
                     </li>
                 </ul>
             </section>
             <section id="graph">
-                <img width="900" height="500" src="img/chart.png" />
+                <img width="280" height="200" src="img/chart.png" />
             </section>
-            <section id="table"></section>
+            <section id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cod</th>
+                            <th>Category</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Valid</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>847007</td>
+                            <td>Ventas Online</td>
+                            <td>Analisis de centros</td>
+                            <td>21/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>847000</td>
+                            <td>Ventas Online</td>
+                            <td>Accesos Intranet PRO LTCEN176</td>
+                            <td>21/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>846969</td>
+                            <td>Ventas Online</td>
+                            <td>Busqueda TCL muestra traifa pago ahora </td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>93</td>
+                        </tr>
+                        <tr>
+                            <td>846959</td>
+                            <td>Ventas Online</td>
+                            <td>RBE: Release de 8 d&iacute;as no reconocido</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>846932</td>
+                            <td>Ventas Online</td>
+                            <td>Reserva 3B5B0448 no integrada en PIN</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>846848</td>
+                            <td>Ventas Online</td>
+                            <td>Rotura del utag_data</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>846806</td>
+                            <td>Ventas Online</td>
+                            <td>resetear contrase&ntilde;a</td>
+                            <td>21/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>846792</td>
+                            <td>Ventas Online</td>
+                            <td>Incidencia Proceso Reserva The Club</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>846766</td>
+                            <td>Ventas Online</td>
+                            <td>Asignar reserva a usuario CC</td>
+                            <td>21/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>846682</td>
+                            <td>Ventas Online</td>
+                            <td>Reservas sin Integrarse</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>846671</td>
+                            <td>Ventas Online</td>
+                            <td>BORRADO DE INF EN RVAS</td>
+                            <td>20/05/2024</td>
+                            <td>S</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>846635</td>
+                            <td>Ventas Online</td>
+                            <td>Reservas icrs the club Mx</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>846600</td>
+                            <td>Ventas Online</td>
+                            <td>P1099417 = crs menciona pago tarjeta, callcenter menciona pago hotel</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>846585</td>
+                            <td>Ventas Online</td>
+                            <td>C967618 - FALTAN DOC CONTABLES</td>
+                            <td>21/05/2024</td>
+                            <td>S</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>846580</td>
+                            <td>Ventas Online</td>
+                            <td>Producto complementario</td>
+                            <td>20/05/2024</td>
+                            <td>S</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>846546</td>
+                            <td>Ventas Online</td>
+                            <td>No arroja disponibilidad desde CRS a la WEB para MUR</td>
+                            <td>20/05/2024</td>
+                            <td>No</td>
+                            <td>-1</td>
+                        </tr>
+                        <tr>
+                            <td>846479</td>
+                            <td>Ventas Online</td>
+                            <td>C1223892 - FALTAN DOC CONTABLES</td>
+                            <td>20/05/2024</td>
+                            <td>No</td>
+                            <td>-3</td>
+                        </tr>
+                        <tr>
+                            <td>846471</td>
+                            <td>Ventas Online</td>
+                            <td>Revisar actualizaci&oacute;n</td>
+                            <td>20/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>846461</td>
+                            <td>Ventas Online</td>
+                            <td>Falta lote cntable factura emitida</td>
+                            <td>20/05/2024</td>
+                            <td>No</td>
+                            <td>-3</td>
+                        </tr>
+                        <tr>
+                            <td>846439</td>
+                            <td>Ventas Online</td>
+                            <td>Reenv&iacute;os de reservas hacia PIN</td>
+                            <td>20/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>846427</td>
+                            <td>Ventas Online</td>
+                            <td>C1153224 - FALTA COBRO EN SAP</td>
+                            <td>20/05/2024</td>
+                            <td>No</td>
+                            <td>-4</td>
+                        </tr>
+                        <tr>
+                            <td>846424</td>
+                            <td>Ventas Online</td>
+                            <td>830611 - EMR no se visualiza</td>
+                            <td>20/05/2024</td>
+                            <td>S</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>846370</td>
+                            <td>Ventas Online</td>
+                            <td>Selection Eolia Djerba</td>
+                            <td>20/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>846307</td>
+                            <td>Ventas Online</td>
+                            <td>Niveles horizons en paso 1</td>
+                            <td>20/05/2024</td>
+                            <td>S</td>
+                            <td>17</td>
+                        </tr>
+                        <tr>
+                            <td>846293</td>
+                            <td>Ventas Online</td>
+                            <td>Solicitud factura/abono</td>
+                            <td>21/05/2024</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </article>
     </main>
+    <script src="Index.js"></script>
 </body>
 </html>
